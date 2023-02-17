@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alpine Slider </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h2 class="title"> Alpine Slide </h2>
+    <div class="slider" x-data="{start:true, end:false}">
+        <div class="slider-content" x-ref="slider"
+            x-on:scroll.debounce="$refs.slider.scrollLeft==0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false; ">
+            <div class="slider-item">
+                <img src="https://plus.unsplash.com/premium_photo-1674595205685-0f6dec44acd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> Hepatica is the first “true” wildflower (that is, other than the rather unusual-flowered skunk
+                        cabbage) to bloom in the tri-state region. Its lovely flowers are a cheerful indicator that
+                        spring has really begun, but they can be surprisingly difficult to spot among the dull brown
+                        leaf litter. </h3>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> Iris fulva is commonly called copper iris because of the unusual copper color of its flowers.
+                        It is a beardless, crestless iris (Louisiana Iris group) that is native to swamps and wetlands
+                        of the deep South and of the lower Mississippi Valley from Louisiana north to southeastern
+                        Missouri and southern Illinois.</h3>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="https://images.unsplash.com/photo-1595681242679-1b77b1e6a3c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> Hepatica is the first “true” wildflower (that is, other than the rather unusual-flowered skunk
+                        cabbage) to bloom in the tri-state region. Its lovely flowers are a cheerful indicator that
+                        spring has really begun, but they can be surprisingly difficult to spot among the dull brown
+                        leaf litter. </h3>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> The leaves and oil of the eucalyptus plant are used as medicine. Eucalyptus oil is made from
+                        the fresh leaves and branch tops of the eucalyptus plant. Eucalyptus leaves contain flavonoids
+                        (plant-based antioxidants), volatile oils, and tannins. Researchers think tannins may help
+                        reduce inflammation.</h3>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Zmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> White Cherry acts by gradually loosening the attachment to these old patterns until they
+                        finally dissipate - having been healed we are no longer bound to them. This essence therefore
+                        has powerful cleansing and healing properties for old unresolved memory patterns.</h3>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="https://images.unsplash.com/photo-1470509037663-253afd7f0f51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> Helianthus is a genus comprising about 70 species of annual and perennial flowering plants in
+                        the daisy family Asteraceae commonly known as sunflowers</h3>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="https://images.unsplash.com/photo-1534211698458-e2be12c1a94c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> In addition to generating euphoria, smoking pink lotus and drinking pink lotus concoctions can
+                        help calm the mind and reduce stress and anxiety.</h3>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="https://plus.unsplash.com/premium_photo-1675438347170-67e2d364363d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> Lupines are a popular symbol of nature and the cycle of life. They have been used throughout
+                        history as symbols of strength and protection. Lupine flowers are often considered symbols of
+                        transformation and renewal. The color blue is also closely linked to water, which may be why
+                        lupine flowers commonly appear in designs or photos related to the ocean or waterways.</h3>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="https://images.unsplash.com/photo-1499117901949-e34ef1b2444a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image" class="slider-image">
+                <div class="slider-info">
+                    <h3> Lotus contains chemicals that decrease swelling, kill cancer cells and bacteria, reduce blood
+                        sugar, help the breakdown of fat, and protect the heart and blood vessels. Chemicals in lotus
+                        also seem to protect the skin, liver, and brain.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="slider-btn">
+            <button class="slider-btns"
+                x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behaviour:'smooth'});"
+                x-bind:class="start? '' : 'slider-btns--active'">Previous</button>
+            <button class="slider-btns"
+                x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behaviour:'smooth'});"
+                x-bind:class="end ? '' : 'slider-btns--active'">Next</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.11.1/cdn.js"></script>
+</body>
+
+</html>
